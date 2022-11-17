@@ -2,25 +2,40 @@
 layout: default
 ---
 
-저는 **이성민**, 이라고 합니다!
+저는 **이성민** 입니다.
 
 <!--[Link to another page](./another-page.html).-->
 
-This blog is Seongmin Lee's Engineer history.
+_아이디어를 광활하게 펼칠_
+    _아름답고 광활한 작업 공간._
 
-열심히 하겠습니다.
+**NAVER.**
 
-# Naver Cloud Platporm
+# Naver Cloud Platporm 과정
 
 NCA
 NCP
 NCE
 
-## Linux
+## 11-17 Linux
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+What is md?
+
+웹상에서의 글쓰기 도구.
+텍스트 기반의 마크업 언어로, 쉽게 쓰고 읽을 수 있으며 HTML로 변환이 가능
+특수기호와 문자를 이용한 매우 간단한 구조의 문법을 사용하기에, 
+간단하게 기록하고 가독성을 높일 수 있다는 강점이 있음
+
+>  Advantage
+1. 간결
+2. 다양한 형태로 변환
+3. 다양한 프로그램 및 플랫폼 지원
+
+> Disadvantage
+1. 표준이 없음
+2. 간단하기에 모든 HTML을 지원하지는 않음
+
+
 
 ### HTML
 
