@@ -6,7 +6,7 @@ layout: default
 
 <!--[Link to another page](./another-page.html).-->
 
-_아이디어를 광활하게 펼칠_
+_아이디어를 광활하게 펼칠_  
 　　_아름답고 광활한 작업 공간._
 
 **NAVER.**
