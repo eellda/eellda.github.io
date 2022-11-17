@@ -1,5 +1,5 @@
-title: 이성민
-logo: /assets/img/logo.jpg
+title:   이성민
+logo: /assets/img/teemo.jpg
 email: sungmin1704@naver.com
 description: 네이버 클라우드를 시작으로.
 favicon: true
@@ -12,17 +12,20 @@ plugins:
   - jemoji
   - jekyll-remote-theme
 
-platforms:
-  - name: MyGitHub
+platforms: link
+  - name: Sungmin
     icon: <i class="fa-brands fa-github"></i>
     link: https://github.com/eellda
-  - name: sample
-    icon: <i class="fa-brands fa-linkedin"></i>
+  - name: Cloud
+    icon: <i class="fa-thin fa-cloud"></i>
+    link: https://www.ncloud.com/
+    name: Notion
+    icon: <i class="fa-solid fa-layer-group"></i>
     link: 
 
-navigation:
+navigation: History
   - name: Naver Cloud Stady
-    link: ./index.html
+    link: 
     sublist:
       - name: Project
         link: ./index.html#small-image
