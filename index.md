@@ -2,27 +2,29 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+저는 **이성민**, 이라고 합니다!
 
-[Link to another page](./another-page.html).
+<!--[Link to another page](./another-page.html).-->
 
-There should be whitespace between paragraphs.
+This blog is Seongmin Lee's Engineer history.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+열심히 하겠습니다.
 
-# Header 1
+# Naver Cloud Platporm
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+NCA
+NCP
+NCE
 
-## Header 2
+## Linux
 
 > This is a blockquote following a header.
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
-### Header 3
+### HTML
 
-```js
+<!--```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
@@ -121,3 +123,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+-->
