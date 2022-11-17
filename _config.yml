@@ -1,7 +1,7 @@
-title: Minimalistic
+title: 이성민
 logo: /assets/img/logo.jpg
-email: person@address.com
-description: Minimalistic is a theme powered by Jekyll.
+email: sungmin1704@naver.com
+description: 네이버 클라우드를 시작으로.
 favicon: true
 color-scheme: auto
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
@@ -13,18 +13,18 @@ plugins:
   - jekyll-remote-theme
 
 platforms:
-  - name: GitHub
+  - name: MyGitHub
     icon: <i class="fa-brands fa-github"></i>
-    link: https://github.com/vaibhavvikas
-  - name: LinkedIn
+    link: https://github.com/eellda
+  - name: sample
     icon: <i class="fa-brands fa-linkedin"></i>
-    link: https://www.linkedin.com/in/vaibhavvikas
+    link: 
 
 navigation:
-  - name: Readme
+  - name: Naver Cloud Stady
     link: ./index.html
     sublist:
-      - name: Image
+      - name: Project
         link: ./index.html#small-image
-  - name: Another Page
+  - name: Nothing Page
     link: ./another-page.html
