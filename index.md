@@ -18,7 +18,7 @@ NCA
 NCP  
 NCE
 
-## 11-17 Linux
+## Linux
 
 What is md?
 
