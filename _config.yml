@@ -3,7 +3,7 @@ logo: /assets/img/teemo.jpg
 email: sungmin1704@naver.com
 description: 네이버 클라우드를 시작으로.
 favicon: true
-color-scheme: auto
+color-scheme: rgb(163,204,163)
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 
 plugins:
@@ -13,18 +13,20 @@ plugins:
   - jekyll-remote-theme
 
 platforms:
-  - name: Sungmin
+  - name: Sungmin's Git
     icon: <i class="fa-brands fa-github"></i>
     link: https://github.com/eellda
-  - name: Cloud
+  - name: Naver Cloud
     icon: <i class="fa-solid fa-database"></i>
     link: https://www.ncloud.com/
 
 navigation:
-  - name: Naver Clooud Study
+  - name: 2022
     link: 
     sublist:
-      - name: Project
+      - name: Cloud
+        link: ./index.html#small-image
+      - name: Linux
         link: ./index.html#small-image
   - name: Nothing Page
     link: ./another-page.html
