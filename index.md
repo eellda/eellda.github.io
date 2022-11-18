@@ -10,17 +10,17 @@ _아이디어를 광활하게 펼칠_
 　　_아름답고 광활한 작업 공간._
 
 
-# Naver Cloud Platform 과정
+# Naver Cloud Platform Aiaas 과정
 
 NCA  
 NCP  
 NCE  
 
 
-[**Google Drive**](https://drive.google.com/drive/my-drive "google link")
+<!-- 링크 [**Google Drive**](https://drive.google.com/drive/my-drive "google link")-->
 ## Linux
 
-What is md?
+#### What is md?
 
 웹상에서의 글쓰기 도구.
 일반 텍스트 편집기를 사용하여 형식이 지정된 텍스트를 만들기 위한 경량 마크업 언어
