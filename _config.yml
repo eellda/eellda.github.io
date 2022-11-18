@@ -3,7 +3,7 @@ logo: /assets/img/teemo.jpg
 email: sungmin1704@naver.com
 description: 네이버 클라우드를 시작으로.
 favicon: true
-color-scheme: gray
+color-scheme: dark
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 
 plugins:
