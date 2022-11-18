@@ -1,6 +1,6 @@
 title: 　　이성민
 logo: /assets/img/teemo.jpg
-email: sungmin1704@naver.com
+email: tree500253@gmail.com
 description: 네이버 클라우드를 시작으로.
 favicon: true
 color-scheme: dark
@@ -27,6 +27,6 @@ navigation:
       - name: Cloud
         link: ./index.html#small-image
       - name: Linux
-        link: ./index.html#small-image
-  - name: Nothing Page
+        link: ./index2.html#small-image
+  - name: 2023년
     link: ./another-page.html
