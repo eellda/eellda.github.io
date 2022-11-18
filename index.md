@@ -9,7 +9,6 @@ layout: default
 _아이디어를 광활하게 펼칠_  
 　　_아름답고 광활한 작업 공간._
 
-[**Google Drive**](https://drive.google.com/drive/my-drive "google link")
 
 # Naver Cloud Platform 과정
 
@@ -17,6 +16,8 @@ NCA
 NCP  
 NCE  
 
+
+[**Google Drive**](https://drive.google.com/drive/my-drive "google link")
 ## Linux
 
 What is md?
