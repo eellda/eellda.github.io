@@ -21,7 +21,7 @@ platforms:
     link: https://www.ncloud.com/
 
 navigation:
-  - name: 2022
+  - name: 2022년
     link: 
     sublist:
       - name: Cloud
