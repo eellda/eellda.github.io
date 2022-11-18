@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 ---
 
 저는 **이성민** 입니다.
