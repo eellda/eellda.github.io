@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 저는 **이성민** 입니다.
@@ -15,7 +15,6 @@ _아이디어를 광활하게 펼칠_
 NCA  
 NCP  
 NCE  
-
 
 <!-- 링크 [**Google Drive**](https://drive.google.com/drive/my-drive "google link")-->
 ## Linux
