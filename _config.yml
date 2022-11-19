@@ -21,12 +21,15 @@ platforms:
     link: https://www.ncloud.com/
 
 navigation:
-  - name: 2022년
+  - name: Academy
     link: 
     sublist:
       - name: Cloud
         link: ./index.html#small-image
       - name: Linux
-        link: ./index2.html#small-image
-  - name: 2023년
+        link: ./index.html#small-image
+      - name: Projects
+        link: ./index.html#small-image
+
+  - name: 2023
     link: ./another-page.html
