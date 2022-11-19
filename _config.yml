@@ -25,7 +25,7 @@ navigation:
     link: 
     sublist:
       - name: Cloud
-        link: ./sutdy/academy.md
+        link: ./academy.md
       - name: Linux
         link: ./index.html#small-image
       - name: Projects
