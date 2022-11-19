@@ -25,7 +25,7 @@ navigation:
     link: 
     sublist:
       - name: Cloud
-        url: /categories/
+        url: /_posts/22-11-cloud.md
       - name: Linux
         link: ./index.html#small-image
       - name: Projects
