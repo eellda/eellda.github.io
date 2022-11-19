@@ -1,5 +1,7 @@
 ---
 layout: default
+title: "test"
+categories: coding
 ---
 
 저는 **이성민** 입니다.
