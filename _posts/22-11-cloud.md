@@ -1,7 +1,7 @@
 ---
 layout: categories
 title: "Naver Cloud Flatform"
-permalink: /categories/
+permalink: /coding/
 author_profile: ture
 siderbar_main: true
 ---
