@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "이성민"
+  name             : "sungmin Lee"
   avatar           : "/assets/images/teemo.jpg"
   bio              : "산뜻한 개발일기 ."
   location         : "South Korea"
@@ -113,9 +113,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:tree500253@gmail.com"
-    - label: "Website"
+    - label: "Cloud"
       icon: "fas fa-fw fa-link"
-      url: "https://eellda.github.io"
+      url: "https://www.ncloud.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/eellda"
@@ -126,6 +126,23 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/eellda"
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+      # url:
+    #- label: "Facebook"
+    #  icon: "fab fa-fw fa-facebook-square"
+      # url:
+    
+      # url:
+    #- label: "GitLab"
+    #  icon: "fab fa-fw fa-gitlab"
+      # url:
+    #- label: "Bitbucket"
+    #  icon: "fab fa-fw fa-bitbucket"
+      # url:
+    #- label: "Instagram"
+    #  icon: "fab fa-fw fa-instagram"
+      # url:
 
 
 # Reading Files
@@ -232,19 +249,20 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
 # https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
     
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-    
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
     
 
 
@@ -266,7 +284,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       show_date: true

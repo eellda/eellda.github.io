@@ -37,6 +37,7 @@
   font-size: $type-size-5;
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
+  font-family: $serif; //서브타이틀 폰트
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
