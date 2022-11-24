@@ -28,7 +28,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "linux-base" %}
-                        <li><a href="/categories/linux" class="">Linux 개념 (with C++) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/linux-base" class="">Linux 개념 (with C++) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
