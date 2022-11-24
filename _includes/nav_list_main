@@ -44,8 +44,15 @@
         <span class="nav__sub-title">HTML</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Unity Lesson 1" %}
-                        <li><a href="/categories/unity-lesson-1" class="">HTML 개념 ({{category[1].size}})</a></li>
+                    {% if category[0] == "html" %}
+                        <li><a href="/categories/html" class="">HTML ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> 
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "html-basic" %}
+                        <li><a href="/categories/html-basic" class="">HTML 개념 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
