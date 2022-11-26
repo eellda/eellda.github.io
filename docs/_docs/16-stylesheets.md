@@ -114,8 +114,8 @@ Not a fan of the refreshed typography of the theme and want to revert back an ol
 $serif              : "PT Serif", Georgia, Times, serif;
 $sans-serif-narrow  : "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 
-$global-font-family : $serif;
-$header-font-family : $sans-serif-narrow;
+$global-font-family : $custom;
+$header-font-family : $custom;
 ```
 
 ### Type scale
@@ -126,7 +126,7 @@ Example:
 
 ```scss
 .page__lead {
-  font-family: $global-font-family;
+  font-family: $custom;
   font-size: $type-size-4;
 }
 ```

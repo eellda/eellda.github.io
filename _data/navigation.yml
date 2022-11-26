@@ -1,9 +1,10 @@
 # main links
 main:
+  - title: "Home"
+    url: /index.html
   - title: "Category"
     url: /categories/
-  - title: "Tag"
-    url: /tags/
+  
 
   # - title: "Sample Collections"
   #   url: /collection-archive/

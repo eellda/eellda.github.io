@@ -37,7 +37,7 @@
   font-size: $type-size-5;
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
-  font-family: $serif; //서브타이틀 폰트
+  font-family: $custom; //서브타이틀 폰트
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -46,7 +46,7 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  font-family: $custom;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;

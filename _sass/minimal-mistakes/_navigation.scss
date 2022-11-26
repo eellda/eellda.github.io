@@ -12,7 +12,7 @@
   max-width: 100%;
   padding-left: 1em;
   padding-right: 1em;
-  font-family: $sans-serif;
+  font-family: $custom;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.3s;
@@ -61,7 +61,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-family: $sans-serif;
+    font-family: $custom;
   }
 
   li {
@@ -73,7 +73,7 @@
       display: block;
       margin-bottom: 0.25em;
       padding: 0.5em 1em;
-      font-family: $sans-serif;
+      font-family: $custom;
       font-size: 14px;
       font-weight: bold;
       line-height: 1.5;
@@ -123,7 +123,7 @@
     padding: 1em 2em;
     float: left;
     width: 50%;
-    font-family: $sans-serif;
+    font-family: $custom;
     font-size: $type-size-5;
     font-weight: bold;
     text-align: center;
@@ -133,7 +133,7 @@
     border-radius: $border-radius;
 
     .prev_next {
-      font-family: $sans-serif;
+      font-family: $custom;
       color:#ffd861;
     }
 
@@ -169,6 +169,7 @@
   padding-top: 2em;
   border-top: 1px solid $border-color;
 }
+
 
 /*
      Priority plus navigation

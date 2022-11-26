@@ -30,7 +30,7 @@ GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/c
 .highlight {
   margin: 0;
   padding: 1em;
-  font-family: $monospace;
+  font-family: $custom;
   font-size: $type-size-7;
   line-height: 1.8;
 }
