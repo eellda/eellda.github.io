@@ -126,6 +126,8 @@ blockquote {
 /* links */
 
 a {
+  text-decoration: none; //밑줄 x 
+  
   &:focus {
     @extend %tab-focus;
   }
