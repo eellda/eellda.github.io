@@ -5,14 +5,14 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
       <li>
-            🔥 <span style="font-family:'Roboto';">Total</style> <span style="font-family:'Roboto';">{{sum}}</style> <span style="font-family:'Roboto';">개</style> 
+            🔥 <span style="font-family:'Roboto';">Total</style> <span style="font-family:'Roboto';">{{sum}}</style></style> 
       </li>
       <li>
         <span class="nav__sub-title">Cloud</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Cpp" %}
-                        <li><a href="/categories/cpp" class="">Naver Cloud ({{category[1].size}})</a></li>
+                    {% if category[0] == "naver_cloud" %}
+                        <li><a href="/categories/naver_cloud" class="">Naver Cloud ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -27,8 +27,8 @@
         <span class="nav__sub-title">Linux</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "linux-base" %}
-                        <li><a href="/categories/linux-base" class="">Linux 개념 (with C++) ({{category[1].size}})</a></li>
+                    {% if category[0] == "linux-basic" %}
+                        <li><a href="/categories/linux-basic" class="">Linux 개념({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -42,13 +42,7 @@
 
 
         <span class="nav__sub-title">HTML</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "html" %}
-                        <li><a href="/categories/html" class="">HTML ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul> 
+
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "html-basic" %}
@@ -56,6 +50,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "html" %}
+                        <li><a href="/categories/html" class="">HTML ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> 
+            
 
         <span class="nav__sub-title">CSS</span>
             <ul>
@@ -78,6 +80,21 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm Lesson 2" %}
                         <li><a href="/categories/algorithm-lesson-2" class="">Java ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <span class="nav__sub-title">그 외</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "git" %}
+                        <li><a href="/categories/git" class="">GitHub ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "emb" %}
+                        <li><a href="/categories/emb" class="">임베디드 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
