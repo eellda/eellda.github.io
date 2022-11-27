@@ -6,29 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <a href="#" onClick="history.back();">text</a>
+    <link rel="stylesheet" href="about.css">
+    
 </head>
 <body>
     <style>
         body {
-            background: black;
-            height: 6000px;
+            background-image: url('moon.jpg');
+            background-repeat: no-repeat;
+            background-size: cover; /* 요소를 비율에 맞게 커버 */
+            background-position: center;
+            background-attachment: fixed;
+            height: 5700px;
             font-family: 'nanumsquare';
         }
         div {
+            margin: 0;
             margin-top: 1000px;
-            color: white;
-            text-align: center;
+            color: rgb(218, 218, 218);
+            text-align: right;
+            width: 1500px;
             opacity: 0;
-            transition: all 0.5s;
+            transition: all 2s;
         }
     </style>
-    <div><h1>가나다라</h1></div>
-    <div><h1>마바사</h1></div>
-    <div><h1>아자카타</h1></div>
-    <div><h1>타파하</h1></div>
+    <div><h1>이곳은 내 <span> 미래</span>와의 조우.</h1></div>
+    <div><h1><span>이상적.</span> 그러나 <span>합리적.</span></h1></div>
+    <div><h1>당신의 <span>역사</span>을 기록하세요. 그리고 <span>복습</span>하세요.</h1></div>
+    <div><h1><span>아이디어</span>를 <span>광활</span>하게 펼칠</h1></div>
+    <div><h1><span>아름</span>답고 <span>광활</span>한 작업 공간.</h1></div>
+    <div><h1><a href="#" onClick="history.back();">Github Blog</a></h1></div>
 
     <script>
+        
         let observer = new IntersectionObserver((e)=>{
             e.forEach((box)=>{
                 if (box.isIntersecting) {
@@ -45,6 +55,8 @@
         observer.observe(div[1])
         observer.observe(div[2])
         observer.observe(div[3])
+        observer.observe(div[4])
+        observer.observe(div[5])
     </script>
 
 </body>
