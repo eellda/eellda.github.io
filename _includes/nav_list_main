@@ -62,8 +62,8 @@
         <span class="nav__sub-title">CSS</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "UE4 Lesson 1" %}
-                        <li><a href="/categories/ue4-lesson-1" class="">CSS 개념 ({{category[1].size}})</a></li>
+                    {% if category[0] == "css-basic" %}
+                        <li><a href="/categories/css-basic" class="">CSS 개념 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

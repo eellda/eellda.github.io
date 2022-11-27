@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a href="#" onClick="history.back();">text</a>
+</head>
+<body>
+    <style>
+        body {
+            background: black;
+            height: 6000px;
+            font-family: 'nanumsquare';
+        }
+        div {
+            margin-top: 1000px;
+            color: white;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+    </style>
+    <div><h1>가나다라</h1></div>
+    <div><h1>마바사</h1></div>
+    <div><h1>아자카타</h1></div>
+    <div><h1>타파하</h1></div>
+
+    <script>
+        let observer = new IntersectionObserver((e)=>{
+            e.forEach((box)=>{
+                if (box.isIntersecting) {
+                    box.target.style.opacity = 1;
+                } 
+                else {
+                    box.target.style.opacity = 0;
+                }
+            })
+        })
+
+        let div = document.querySelectorAll('div')
+        observer.observe(div[0]) //html 요소가 화면에 등장하는지 감시
+        observer.observe(div[1])
+        observer.observe(div[2])
+        observer.observe(div[3])
+    </script>
+
+</body>
+</html>
