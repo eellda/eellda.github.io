@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta name="generator" content="Aspose.Words for .NET 22.11.0" />
+        <title></title>
+        <style type="text/css">
+            body { 
+                font-family:Calibri; font-size:11pt 
+            }
+            h1, h2, h4, p { 
+                margin:0pt 0pt 8pt 
+            }
+            h1 { 
+                margin-top:12pt; margin-bottom:3pt; page-break-after:avoid; font-family:Arial; font-size:16pt; font-weight:bold 
+            }
+            h2 { 
+                margin-top:12pt; margin-bottom:3pt; page-break-after:avoid; font-family:Arial; font-size:14pt; font-weight:bold; font-style:italic
+            }
+            h4 { 
+                margin-top:12pt; margin-bottom:3pt; page-break-after:avoid; font-size:14pt; font-weight:bold 
+            }
+            .FencedCodepython { 
+                margin-bottom:8pt; font-family:Consolas; font-size:10pt; background-color:#e2e2e2 
+            }
+            .SetextHeading2 { 
+                margin-top:12pt; margin-bottom:3pt; page-break-after:avoid; font-family:Arial; font-size:14pt; font-weight:bold; font-style:italic 
+            }
+            span.Hyperlink { 
+                text-decoration:underline; color:#0000ff; -aw-style-name:hyperlink 
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+                <hr size="2" align="left" style="width:100%" />
+            </div>
+
+            <h1><span style="font-weight:normal">1. </span>
+                <span style="font-family:Calibri; font-weight:normal">파일 시스템 탐색 기본 명령어</span>
+            </h1>
+            <h4><span style="font-weight:normal">pwd = print working directory</span>
+            </h4>
+            <p class="FencedCodepython"><span>pwd</span></p>
+            <p class="FencedCodepython"><span>/home/vagrant/git/bitcamp-ncp</span></p>
+            <p><span style="font-weight:bold">현재 작업 위치</span><span>를 알려줌</span></p>
+            <h4><span style="font-weight:normal">cd = change directory</span></h4>
+            <p class="FencedCodepython"><span>cd ..</span></p>
+            <p class="FencedCodepython"><span>/home/vagrant/git</span></p>
+            <p><span>디렉토리 이동</span></p><h4><span style="font-weight:normal">ls - list</span></h4>
+            <p class="FencedCodepython"><span>ls</span></p>
+            <p class="FencedCodepython"><span>bitcamp-ncp</span><span style="-aw-import:spaces">&#xa0; </span><span>bitcamp-ncp2</span><span style="-aw-import:spaces">&#xa0; </span><span>bitcamp-study</span><span style="-aw-import:spaces">&#xa0; </span><span>bitcamp-test</span></p>
+            <p><span>현재 디렉토리의 리스트를 보여줌</span></p>
+            <h4><span style="font-weight:normal">file</span></h4>
+            <p class="FencedCodepython"><span>file bitcamp-ncp</span></p>
+            <p class="FencedCodepython"><span>bitcamp-ncp: directory</span></p>
+            <p><span>파일의 타입을 알려줌</span></p>
+            <h4><span style="font-weight:normal">less</span></h4>
+            <p class="FencedCodepython"><span>less cp.txt</span></p>
+            <p class="FencedCodepython"><span>asd (내용)</span></p>
+            <p><span>파일의 내용을 알려줌</span></p>
+            <h1><span style="font-weight:normal">2. </span><span style="font-family:Calibri; font-weight:normal">파일과 디렉토리 조작 명령어</span></h1>
+            <h4><span style="font-weight:normal">cp -copy</span></h4>
+            <p class="FencedCodepython"><span>cp cp.txt new_cp.txt</span></p>
+            <p class="FencedCodepython"><span>ls</span><br />
+                <span>cp.txt new_cp.txt</span></p><p><span>파일이나 디렉토리를 복사</span></p>
+            <h4><span style="font-weight:normal">mkdir - make directory</span></h4>
+            <p class="FencedCodepython"><span>mkdir yummi</span></p>
+            <p class="FencedCodepython"><span>ls</span><br />
+                <span>yummi cp.txt new_cp.txt</span></p>
+            <p><span>새로운 디렉토리를 생성</span></p>
+            <h4><span style="font-weight:normal">rm - remove</span></h4>
+            <p class="FencedCodepython"><span>rm new_cp.txt</span></p>
+            <p class="FencedCodepython"><span>ls</span><br /><span>yummi cp.txt</span></p>
+            <p><span>삭제 명령어</span></p>
+            <h4><span style="font-weight:normal">mv - move</span></h4>
+            <p class="FencedCodepython"><span>mv cp.txt yummi</span></p>
+            <p class="FencedCodepython"><span>ls</span><br /><span>yummi</span></p>
+            <p><span>파일이나 디렉토리를 이동</span></p>
+            <h4><span style="font-weight:normal">ln - link</span></h4>
+            <p><span style="font-weight:bold">파일링크</span><span>를 만들때 사용</span></p>
+            <h4><span style="font-weight:normal">하드링크</span></h4>
+            <p class="FencedCodepython"><span>ln cp.txt hardlink</span><br /><span>ls</span></p>
+            <p class="FencedCodepython"><span>cp.txt</span><span style="-aw-import:spaces">&#xa0; </span><span>hardlink</span></p>
+            <h4><span style="font-weight:normal">심볼링크</span></h4>
+            <p class="FencedCodepython"><span>cd ..</span><br /><span>ln -s cp.txt softlink</span><br />
+                <span>ls -al</span></p>
+            <p class="FencedCodepython"><span>lrwxrwxrwx. 1 vagrant vagrant</span><span style="-aw-import:spaces">&#xa0;&#xa0; </span><span>6 Nov 23 01:36 softlink -&gt; cp.txt</span></p>
+            <h1><span style="font-weight:normal">3. </span><span style="font-family:Calibri; font-weight:normal">명령어를 다루는 명령어</span></h1>
+            <h4><span style="font-weight:normal">type</span></h4>
+            <p class="FencedCodepython"><span>type mkdir</span></p>
+            <p class="FencedCodepython"><span>mkdir is hashed (/usr/bin/mkdir)</span></p>
+            <p><span>명령 유형에 대한 정보를 표시</span></p>
+            <h4><span style="font-weight:normal">which</span></h4>
+            <p class="FencedCodepython"><span>which cp.txt</span></p>
+            <p class="FencedCodepython"><span>/usr/bin/which: no cp.txt in (/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/vagrant/.local/bin:/home/vagrant/bin)</span></p>
+            <p><span>특정 명령어의 위치를 찾을때 사용</span></p>
+            <h4><span style="font-weight:normal">man</span></h4>
+            <p class="FencedCodepython"><span>man mkdir</span></p>
+            <p class="FencedCodepython"><span>NAME</span><span style="-aw-import:spaces">&#xa0; </span><br />
+                <span style="-aw-import:spaces">&#xa0;&#xa0;&#xa0; </span><span>mkdir - make directories</span></p>
+            <p><span>명령어의 모든 정보를 볼때 사용</span></p>
+            <h4><span style="font-weight:normal">apropos</span></h4>
+            <p class="FencedCodepython"><span>apropos tas</span></p>
+            <p class="FencedCodepython"><span>edquotas (8)</span><span style="-aw-import:spaces">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span>- edit user quotas</span><br />
+                <span>...</span><br />
+                <span>taskset (1)</span><span style="-aw-import:spaces">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span>- retrieve or set a process's CPU affinity</span></p>
+            <p><span>검색한 내용과 관련 있는 명령어를 설명과 함께 보여줌</span></p>
+            <h4><span style="font-weight:normal">info</span></h4>
+            <p class="FencedCodepython"><span>info mkdir</span></p>
+            <p class="FencedCodepython"><span>12.3 'mkdir': Make directories</span><br />
+                <span>...</span><br />
+                <span>'--mode=MODE'</span><br />
+                <span>...</span></p><p><span>명령어에 대한 사용법과 옵션들을 보여줌</span></p>
+            <h4><span style="font-weight:normal">whatis</span></h4>
+            <p class="FencedCodepython"><span>whatis mkdir</span></p>
+            <p class="FencedCodepython"><span>mkdir (1)</span><span style="-aw-import:spaces">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span>- make directories</span><br />
+                <span>mkdir (2)</span><span style="-aw-import:spaces">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span>- create a directory</span></p>
+            <p><span>명령어에 대한 사용법을 간단하게만 보여줌</span></p>
+            <h4><span style="font-weight:normal">alias</span></h4>
+            <p class="FencedCodepython"><span>alias md="mkdir"</span></p>
+            <p class="FencedCodepython"><span>md</span><br />
+                <span>mkdir: missing operand</span></p>
+            <p><span>명령어들을 다른 이름으로 바꿀 수 있는 쉘 내부 명령어</span></p>
+            <p><a href="https://eellda.github.io/linux-userguide.md" style="text-decoration:none"><span class="Hyperlink">리눅스 참고 명령어</span></a></p>
+        </div>
+    </body>
+    </html>
