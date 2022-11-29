@@ -56,3 +56,16 @@ a {
 .cate li > a {
     color: white;
   }
+
+  div {
+    border: 0px solid yellow;
+    margin: 0;
+    margin-top: 1000px;
+    margin-right: 100px;
+    position: relative;
+    color: rgb(218, 218, 218);
+    text-align: right;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all 2s;
+}

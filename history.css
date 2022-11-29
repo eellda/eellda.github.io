@@ -57,18 +57,26 @@ div {
 
 .menu ul > li {
   font-weight: bold;
+  list-style-type: none;
+  text-align: center;
+  margin-left: -20px;
+  border: 0px solid black;
 }
   
 .content {
   margin: 250px ;
+  margin-top: 150px;
   text-align: center;
   padding: 0px 10px;    
 }
 
 .content_li {
   list-style-type: none;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
   border: 1px solid black;
-  height: 550px;
+  height: 500px;
 }
 
 /* .list {
