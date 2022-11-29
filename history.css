@@ -37,13 +37,49 @@ a {
 .cate li > a {
     color: rgb(39, 23, 2);
   }
+  
+div {
+      border: 1px solid rgb(0, 0, 0);
+}
+  .menu {
+    background-color: lightgray;
+    font-size: 1.2em;
+    width: 200px;
+    height: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    /* margin: 20px; */
+}
 
+.menu ul > li {
+    font-weight: bold;
+    xtext-decoration: line-through;
+  }
 
-.list {
-    border: 0px solid black;
+  .xmenu ul > li:last-child {
+    text-decoration: none;
+  }
+  
+  .xmenu ol > li {
+    font-weight: normal;
+    text-decoration: underline;    
+  }
+  
+  .content {
+    font-family: 바탕체, 궁서체, AppleMyungjo, serif;
+    margin-left: 200px;
+    margin: 200px ;
+    text-align: center;
+    padding: 0px 10px;
+    
+}
+
+/* .list {
+    border: 1px solid black;
     width: 500px;
     height: 700px;
     margin-top: 140px;
     margin-left: 650px;
     margin-bottom: 150px;
-}
+} */

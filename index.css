@@ -16,6 +16,9 @@ h2 span:nth-child(1) {
     color: #FFF45B;
 }
 
+a {
+    text-decoration: none;
+}
 
 .cate {
     position: fixed;
@@ -45,13 +48,10 @@ h2 span:nth-child(1) {
     margin: 0;
     margin-right: 50px;
     padding: 10px;
-    border: 0px solid black;
+    border: 0px solid white;
     /*background-color: rgb(58, 55, 55);*/
 }
 
-a {
-    text-decoration: none;
-}
 
 .cate li > a {
     color: white;
