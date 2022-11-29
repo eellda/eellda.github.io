@@ -54,7 +54,7 @@ border: 0px solid black;
 height: 400px;
 }
 
-/* .a {
+.a {
   border: 2px solid rgb(146, 99, 12);
   border-radius: 30px;
   box-sizing: border-box;
@@ -108,7 +108,7 @@ height: 400px;
   width: 250px;
   height: 150px;
   float:left;
-} */
+}
 
 /* .a:hover, .b:hover, .c:hover, .d:hover, .e:hover {
   background-color: rgb(85, 65, 42);
