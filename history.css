@@ -8,7 +8,6 @@
     height: 45px;
     padding: 5px 1px;
     border-bottom: 1px solid rgb(47, 30, 3);
-    xbackground-color: rgb(170, 170, 170);
     opacity: 0.55;
 }
 
@@ -41,38 +40,33 @@ a {
 div {
       border: 1px solid rgb(0, 0, 0);
 }
-  .menu {
-    background-color: lightgray;
-    font-size: 1.2em;
-    width: 200px;
-    height: 600px;
-    padding: 10px;
-    box-sizing: border-box;
-    float: left;
+
+.menu {
+  background-color: lightgray;
+  font-size: 1.2em;
+  width: 200px;
+  height: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
     /* margin: 20px; */
 }
 
 .menu ul > li {
-    font-weight: bold;
-    xtext-decoration: line-through;
-  }
+  font-weight: bold;
+}
+  
+.content {
+  font-family: 바탕체, 궁서체, AppleMyungjo, serif;
+  margin-left: 200px;
+  margin: 200px ;
+  text-align: center;
+  padding: 0px 10px;    
+}
 
-  .xmenu ul > li:last-child {
-    text-decoration: none;
-  }
-  
-  .xmenu ol > li {
-    font-weight: normal;
-    text-decoration: underline;    
-  }
-  
-  .content {
-    font-family: 바탕체, 궁서체, AppleMyungjo, serif;
-    margin-left: 200px;
-    margin: 200px ;
-    text-align: center;
-    padding: 0px 10px;
-    
+.content_li {
+  list-style-type: none;
 }
 
 /* .list {
