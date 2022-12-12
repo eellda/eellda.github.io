@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.menu-bar {
+  background-color: #777;
+  overflow: auto;
+  text-align: center;
+}
+.menu-bar a {
+  padding: 12px;
+  display: inline-block;
+  font-size: 24px;
+  xfloat: center;
+}
+.menu-bar a:hover {
+  background-color: rgb(47, 47, 47);
+}
+.menu-bar a.active {
+  background-color: aquamarine;
+}
+
