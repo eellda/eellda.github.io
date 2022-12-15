@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교</title>
+</head>
+<body>
+    <h1>숫자 비교 하기</h1>
+
+    <p>정수 num1과 num2가 매개변수로 주어집니다. 두 수가 같으면 1 다르면 -1을 retrun하도록 solution 함수를 완성해주세요.</p>
+    <p>0 ≤ num1 ≤ 10,000<br>
+        0 ≤ num2 ≤ 10,000</p>
+
+    <p>입출력 예</p>
+    <p>num1이 2이고 num2가 3이므로 다릅니다. 따라서 -1을 return합니다.</p>
+    
+    <p>입출력 예2</p>
+    <p>num1이 11이고 num2가 11이므로 같습니다. 따라서 1을 return합니다.</p>
+
+    <p>입출력 예3</p>
+    <p>num1이 7이고 num2가 99이므로 다릅니다. 따라서 -1을 return합니다.</p>
+    
+    <script>
+
+        function solution(num1, num2) {
+            if(num1 == num2) {
+                return '1';
+            } else {
+                return '-1';
+            }
+        }
+        console.log(solution(11, 111));
+
+        function solution1(num1, num2) {
+            if(num1 == num2) {
+                return '1';
+            } else return '-1';
+        }
+        console.log(solution1(11, 11));
+
+        function solution2(num1, num2) {
+            if(num1 == num2) return '1'; else return '-1';
+        }
+        console.log(solution2(11, 111));
+
+        function solution2(num1, num2) {
+            if(num1 == num2) return '1'; else return '-1';
+        }
+        console.log(solution2(11, 111));
+
+        function solution3(num1, num2) {
+           return num1 == num2 ? '1' :  '-1' ;
+        }
+        console.log(solution3(7, 99));
+
+        solution4 = (num1, num2) => num1 == num2 ? '1' :  '-1' ;
+        console.log(solution4(11, 11));
+
+
+
+
+
+    </script>
+</body>
+</html>

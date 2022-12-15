@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>몫 구하기</h1>
+
+    <p>정수 num1, num2가 매개변수로 주어질 때, num1을 num2로 나눈 몫을 return 하도록 solution 함수를 완성해주세요.</p>
+    <p>0 < num1 ≤ 100<br>
+        0 < num2 ≤ 100</p>
+
+    <p>입출력 예</p>
+    <p>num1이 10, num2가 5이므로 10을 5로 나눈 몫 2를 return 합니다.</p>
+    
+    <p>입출력 예2</p>
+    <p>num1이 7, num2가 2이므로 7을 2로 나눈 몫 3을 return 합니다.</p>
+    
+
+
+    <script>
+        // 솔루션
+        //function solution(num1, num2) {
+        //    var answer = 0;
+        //    return answer;
+        //}
+        
+        function sol(num1, num2) {
+            var result = 0;
+            result = num1 / num2;
+            Math.floor(result);
+            return result;
+        }
+        console.log(sol(7, 2));
+
+        function sol2(num1, num2) {
+            var result = 0;
+            result = num1 / num2;
+            result = Math.floor(result);
+            return result;
+        }
+        console.log(sol2(7, 2));
+
+        //  위에 궁금증
+        console.log('----------------------');
+        
+        function solution(num1, num2) {
+            var result = 0;
+            result = num1 / num2;
+            return Math.floor(result);
+        }
+        console.log(solution(7, 2));
+
+
+        function solruion2(num1, num2) {
+            var result = num1 / num2;
+            return Math.floor(result);
+        }
+        console.log(solruion2(7, 2));
+
+
+        function solution3(num1, num2) {
+            return Math.floor(result = num1 / num2);
+        }
+        console.log(solution3(5, 2));
+
+
+        var solution4 = (num1, num2) => Math.floor(result = num1 / num2);
+        console.log(solution4(9, 2));
+
+        function solution5(num1, num2) {
+            if(0 < num1 & num2 <= 100) {
+                return Math.floor(result = num1 / num2);
+            } else console.log('값 초과');
+        }
+        console.log(solution5(102, 2));
+    </script>
+</body>
+</html>
