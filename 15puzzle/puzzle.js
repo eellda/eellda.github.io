@@ -1,4 +1,4 @@
-const GameDifficulty = [50];
+const GameDifficulty = [100];
 
 
 
@@ -23,9 +23,8 @@ class Game {
         for(let y = 0; y < this.rows; y++) {                                                    // y 변수 선언      // y가 rows(4) 보다 작으면 반복문 돌리고 y++
             for(let x = 0; x < this.columns; x++) {                                             // x 변수 선언      // x가 coumns(4) 보다 작으면 반복문 돌리고 x++
                 let cellId = x + y * this.columns;                                              // cellId 는 x + y * 4
-                if(cellId + 1 >= this.count) {                                                  // 만약 cellId + 1 이 16 보다 크거나 같으면
-                    break;                                                                      // 탈출
-                }
+                if(cellId + 1 >= this.count) break;                                             // 만약 cellId + 1 이 16 보다 크거나 같으면  // 탈출
+                                                                                        
                 let cell = this.cells[cellId];                                                  // cell 은 class 'cell' Elements 의 cellId
                 this.positionCellAtCoord(cellId, x, y);                                         // positionCellAtCoord 객체에 cellId, x, y 값을 넣은 값을 받음
                 cell.addEventListener('click', () => this.onClickOnCell(cellId));               // celll의 Event 추가하는데 this.onClickOnCell(cellId) 함수를 click에 저장
@@ -67,16 +66,13 @@ class Game {
         let canMove = (diff[0] == 1 && diff [1] == 0) || (diff[0] == 0 && diff[1] == 1);
         if(canMove) {
             return cellCoords;
-        } else {
-            return null;
-        }
+        } else return null;
     }
-
 
     positionCellAtCoord(cellId, x, y) {                                                         // positionCellAtCoord 객체 선언 cellId, x, y 아규먼트를 받음
         let cell = this.cells[cellId];                                                          // cell 은 class 'cell' Elements 의 cellId
-        cell.style.left = (x * cell.clientWidth) + 'px';                                        // cell의 가로 스타일은 x * cell.clientWidth px
-        cell.style.top = (y * cell.clientWidth) + 'px';                                         // cell의 세로 스타일은 y * cell.clientWidth px
+        cell.style.left = (x * cell.clientWidth) + 'px';                                        // cell의 가로 넓이는 x * cell.clientWidth px
+        cell.style.top = (y * cell.clientWidth) + 'px';                                         // cell의 세로 넓이는 y * cell.clientWidth px
     }
 
     onClickOnCell(cellId) {                                                                     // onClickOnCell 객체 선언 cellId 아규먼트를 받음

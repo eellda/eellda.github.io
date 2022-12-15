@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체의 프로퍼티</title>
+</head>
+<body>
+  <h1>객체 프로퍼티</h1>
+  
+  <script>
+
+    var obj1 = new Object();
+
+    obj1.name = '홍길동';
+    obj1.age = 20;
+    obj1.working = true;
+    obj1.hello = function() {
+      console.log('1' + this.working);
+    }
+
+    console.log(obj1);
+    obj1.hello();
+
+
+    var obj2 = new Object();
+    
+    obj2.name = 'iu';
+    obj2.age = 21;
+    obj2.working = false;
+    obj2.hello = function() {
+      console.log('2' + this.working);
+    }
+    console.log(obj2);
+    obj2.hello();
+
+
+    var obj3 = new Object();
+    obj3.name = 'new';
+    obj3.age = 24;
+    obj3.working = null;
+    obj3.hello = function() {
+      console.log('3' + this.name);
+    }
+    console.log(obj3);
+    obj3.hello();
+
+
+    var obj4 = new Object();
+    obj4.name = 'nothing';
+    obj4.age  = 45;
+    obj4.working = false;
+    obj4.hello = function() {
+      console.log('4' + this.age);
+    }
+    console.log(obj4);
+    obj4.hello();
+
+    var obj5 = new Object();
+    obj5.name = 'noname';
+    obj5.age = 24;
+    obj5.working = true;
+    obj5.hello = function() {
+      console.log('5' + this.working);
+    }
+    console.log(obj5);
+    obj5.hello();
+
+    var obj6 = new Object();
+    obj6.name = 'nin';
+    obj6.age = 25;
+    obj6.working = false;
+    obj6.hello = function() {
+      console.log(6 + this.hello);
+    }
+    console.log(obj6);
+    obj6.hello();
+
+    var obj7 = new Object();
+    obj7.name = 'null';
+    obj7.age = 234;
+    obj7.working = false;
+    obj7.hello = function() {
+      console.log('7' + this.age);
+    }
+    console.log(obj7);
+    obj7.hello();
+
+    var obj8 = new Object();
+    obj8.name = 'dofwhdn';
+    obj8.age = 236;
+    obj8.working = true;
+    obj8.hello = function() {
+      console.log('8' + this.name);
+    }
+    console.log(obj8);
+    obj8.hello();
+
+
+    var obj9 = new Object();
+    obj9.name = 'gasduinbvjk';
+    obj9.age = 2624;
+    obj9.working = false;
+    obj9.hello = function() {
+      console.log('9' + this.working);
+    }
+    console.log(obj9);
+    obj9.hello();
+
+    var obj10 = new Object();
+    obj10.name = 'afhovnaj';
+    obj10.age = 245;
+    obj10.working = true;
+    obj10.hello = function() {
+      console.log('10' + this.name);
+    }
+    console.log(obj10);
+    obj10.hello();
+
+
+    var obj11 = new Object();
+    obj11.name = 'skrtngud';
+    obj11.age = 12345;
+    obj11.working = true;
+    obj11.hello = function() {
+      console.log('11' + this.age);
+    }
+    console.log(obj11);
+    obj11.hello();
+
+
+    varobj12 = new Object();
+    obj11.name = 'rose';
+    obj11.age = 1234;
+    obj11.working = false;
+    obj11.hello = function() {
+      console.log('12' + this.working);
+    }
+    console.log(obj12);
+    obj12.hello();
+
+
+
+  </script>
+</body>
+</html>
