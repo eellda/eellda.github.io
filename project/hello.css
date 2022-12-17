@@ -1,5 +1,3 @@
-// 폰트지정
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -20,7 +18,7 @@ body {
 }
 .current-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .current-info .others {
@@ -35,10 +33,12 @@ body {
 .current-info .others .weather-itme {
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 
 .date-container {
     font-weight: 100;
+    width: 260px;
 }
 .date-container .time {
     font-size: 70px;
@@ -121,4 +121,16 @@ body {
         align-items: none;
         overflow-y: scroll;
     }
+}
+
+.button-container {
+    padding: 2px;
+    text-align: center;
+    xdisplay: contents;
+    xflex-direction: unset;
+    justify-content: center;
+    xflex-wrap: wrap;
+}
+#btn1 {
+    margin: 20px;
 }

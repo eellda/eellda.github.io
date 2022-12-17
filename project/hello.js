@@ -8,11 +8,14 @@ const currentTempE1 = document.getElementById('current-temp');
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednsday', 'Thursday', 'Friday', 'Saturday'];
 const Months = ['Jan', 'Feb', 'Mar', 'Apr', 'May','Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
+var baseDate = document.querySelector("#base_date");
+
 const API_KEY = 'sxu9KRkG12s8M1jzMQue37aHfnGiREb4AkZ3vd3k6AyedQ%2Bwzi69FPFxjjhCFBRG%2Bg2yWdwfHlsp9ICw5TfOZQ%3D%3D';
 
 
 setInterval(() => {
     const time = new Date();
+    const fullYear = time.getFullYear();
     const month = time.getMonth();
     const date = time.getDate();
     const day = time.getDay();
@@ -21,6 +24,7 @@ setInterval(() => {
     const minuts = time.getMinutes();
     const seconds = time.getSeconds();
     const ampm = hour >= 12 ? 'PM' : 'AM'
+    
 
     timeE1.innerHTML = (hoursIn12Hrformat < 10? '0' + hoursIn12Hrformat : hoursIn12Hrformat) + ':' + (minuts < 10 ? '0' + minuts : minuts) + ' ' + `<span id="am-pm">${ampm}</span>`
 
@@ -28,7 +32,12 @@ setInterval(() => {
 
 },1000);
 
+
 getWeatherData();
+document.querySelector("#btn1").onclick = () => {
+    getWeatherData();
+}
+
 function getWeatherData() {
     navigator.geolocation.getCurrentPosition((success) => {
         console.log('sucess');
@@ -37,10 +46,10 @@ function getWeatherData() {
         let openApiUrl = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?' +
         'serviceKey=' + `${API_KEY}` +
         '&pageNo=1&numOfRows=1000&dataType=JSON' +
-        '&base_date=20221217' +
+        '&base_date=' + baseDate.value +
         '&base_time=0600&' +
-        'nx=55' +
-        '&ny=127';
+        'nx=61' +
+        '&ny=125';
 
         fetch(openApiUrl).then(res => res.json()).then(data => {
             let datas = data.response.body.items.item
@@ -69,7 +78,7 @@ function showWeatherData(datas) {
     currentWeatherItemsE1.innerHTML = 
     `<div class="weather-itme">
         <div>강수 형태</div>
-        <div>${PTY}</div>
+        <div>${PTY == 0 ? '맑음' : '비올듯 말듯'}</div>
     </div>
     <div class="weather-itme">
         <div>습도</div>
