@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Do Hyeon', sans-serif;
+  background-color: linear-gradiet(300deg, #757b87, #909d9d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+input {
+  padding: 1rem;
+  border-radius: 25px;
+  border: none;
+  background-color: #fff;
+  font-family: inherit;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  font-size: 1rem;
+}
+input:focus {
+  outline: none;
+}
+.weather {
+  text-align: center;
+  font-size: 2rem;
+}
+.weather h2 {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+/* .weather img{ transform: scale(2); } */
+
+small {
+  display: block;
+}
+
+#btn1 {
+  border-radius: 25px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#btn1:hover {
+  opacity: 0.7;
+}
+
+.container {
+  padding: 20px;
+}
+.current-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.date-container {
+  font-weight: 100;
+  width: 260px;
+}
+.date-container .time {
+  font-size: 70px;
+}
+.date-container #am-pm {
+  font-size: 30px;
+  margin-left: 20px;
+}
+.date-container .date {
+  font-size: 30px;
+}
+
+.place-container {
+  text-align: end;
+}
+
+.place-container .time-zone {
+  font-size: 30px;
+  font-weight: 100;
+}
+.place-container .country {
+  font-size: 12px;
+  font-weight: 700;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./weather.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="current-info">
+        <div class="date-container">
+          <div class="time" id="time">12:30 <span id="am-pm">PM</span></div>
+          <div class="date" id="date">Monday, 24 May</div>
+        </div>
+        <div class="place-container">
+          <div class="time-zone" id="time-zone">
+            <div id="country" class="country">Asia/Korea</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form id="form">
+      <input
+        type="text"
+        id="search"
+        placeholder="도시 이름을 입력하세요. (영어로)"
+        autocomplete="off"
+      />
+    </form>
+    <br />
+    <button id="btn1" type="submit">Search</button><br />
+    <h5>버튼을 천천히 두번 클릭해주세요.</h5>
+    <!-- <textarea id="ta" cols="80" rows="10"></textarea> -->
+    <main id="main"></main>
+
+    <script src="./weather.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+
+  <body>
+    <form id="form">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search By Location"
+        autocomplete="off"
+      />
+    </form>
+    <main id="main"></main>
+
+    <script src="weather.js"></script>
+  </body>
+</html> -->

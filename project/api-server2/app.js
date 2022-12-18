@@ -38,7 +38,7 @@ app.get('/proxy2', (req, res) => {
     
     request.get({url: openApiUrl}, (error, response, body) => res.send(body));
 });
-
+https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst?
 
 
 

@@ -30,7 +30,7 @@ setInterval(() => {
 
     dateE1.innerHTML = days[day] + ', ' + date + ' ' + Months[month];
 
-},1000);
+},100);
 
 
 getWeatherData();
@@ -56,10 +56,9 @@ function getWeatherData() {
             console.log(datas);
             showWeatherData(datas);
         })
-    
+
         //request.get({url: openApiUrl}, (error, response, body) => res.send(body));
-
-
+        
     })
 }
 
@@ -89,7 +88,7 @@ function showWeatherData(datas) {
         <div>${T1H}&#176;</div>
     </div>`;
 
-    let otherDayForcast = ''
+    //let otherDayForcast = ''
     // datas.array.forEach((day, idx) => {
     //     if(idx == 0) {
     //         currentTempE1.innerHTML = 
@@ -110,6 +109,6 @@ function showWeatherData(datas) {
     //     }
     // });
 
-    weatherForecastE1.innerHTML = otherDayForcast;
+    //weatherForecastE1.innerHTML = otherDayForcast;
 }
 

@@ -1,0 +1,141 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.a {
+  border: 2px solid rgb(146, 99, 12);
+  border-radius: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 150px;
+  margin: 13px;
+  width: 250px;
+  height: 150px;
+  float:left;
+}
+.b {
+  border: 2px solid rgb(146, 99, 12);
+  border-radius: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 150px;
+  margin: 13px;
+  width: 250px;
+  height: 150px;
+  float:left;
+}
+.c {
+  border: 2px solid rgb(146, 99, 12);
+  border-radius: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 150px;
+  margin: 13px;
+  width: 250px;
+  height: 150px;
+  float:left;
+}
+.d {
+  border: 2px solid rgb(146, 99, 12);
+  border-radius: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 150px;
+  margin: 13px;
+  width: 250px;
+  height: 150px;
+  float:left;
+}
+.e {
+  border: 2px solid rgb(146, 99, 12);
+  border-radius: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 150px;
+  margin: 13px;
+  width: 250px;
+  height: 150px;
+  float:left;
+}
+
+.a:hover, .b:hover, .c:hover, .d:hover, .e:hover {
+  background-color: rgb(85, 65, 42);
+  transition: 0.5s ease-out;
+  opacity : 1;
+  color: azure;
+}
+
+.cate {
+  position: fixed;
+  list-style: none;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  padding: 5px 1px;
+  border-bottom: 1px solid rgb(47, 30, 3);
+  opacity: 0.55;
+}
+
+.cate:hover {
+background-color: bisque;
+  transition: 1s ease-out;
+  opacity : 0.7;
+}
+.cate:not(:hover) {
+  transition: 1s ease-out;
+}
+
+.cate li {
+  float: right;
+  text-align: center;
+  margin: 0;
+  margin-right: 50px;
+  padding: 10px;
+  border: 0px solid black;
+  /*background-color: rgb(58, 55, 55);*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.cate li > a {
+  color: rgb(39, 23, 2);
+}
+
+
+.content {
+background-color: bisque;
+border: 3px solid rgb(104, 79, 34);
+xmargin: 100px, 0, 20px, 20px;
+height: 600px;
+width: 1080px;
+border-radius: 20px;
+text-align: center;
+display: inline-block;
+}
+
+.content-list {
+border: 0px solid black;
+height: 400px;
+}
+
+
+.content-list {
+  font-size: 20px;
+}
+
+
+
+/* .content_li {
+  list-style-type: none;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid black;
+  height: 500px;
+} */
