@@ -81,3 +81,90 @@
   transform: translateX(410px);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
 }
+
+
+/* 
+.container {
+  width: 100%;
+  height: 30vh;
+  xbackground: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.skills h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.progress-bar {
+  background: #959595;
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-bar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  xbackground: red;
+}
+
+.progress-bar div span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #222;
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html {
+  background: #e01e63;
+  animation: html 1s linear forwards;
+}
+.css {
+  background: #cddc39;
+  animation: css 1s linear forwards;
+}
+.javascript {
+  background: #00bcd4;
+  animation: javascript 1s linear forwards;
+}
+
+.html span {
+  border: 1px solid #e01e63;
+}
+.css span {
+  border: 1px solid #cddc39;
+}
+.javascript span {
+  border: 1px solid #00bcd4;
+}
+
+@keyframes html {
+  100% {
+    width: 54%;
+  }
+}
+@keyframes css {
+  100% {
+    width: 28%;
+  }
+}
+@keyframes javascript {
+  100% {
+    width: 18%;
+  }
+} */

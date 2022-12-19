@@ -34,13 +34,13 @@
     //    console.log(solution2(20, 28));
 
         function solution3(num1, num2) {
-            if(-50000 <= num1 & num2 <= 50000) {
+            if((-50000 <= num1 && num1 <= 50000) && (-50000 <= num2 && num2 <= 50000)) {
                 return answer = num1 - num2;
             } else console.log('값 초과');
             //console.log(answer);
         }
         //solution3(23, 123);
-        console.log(solution3(23, 123));
+        console.log(solution3(23, 60123));
 
 
     </script>

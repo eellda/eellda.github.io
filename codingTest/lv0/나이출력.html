@@ -31,10 +31,10 @@
         //}
 
         function solution(age) {
-            if( 0 < age <= 120) {
+            if(0 < age && age <= 120) {
                 return console.log(`2022년 기준 ${age}살 이므로 ${year = 2022 - (age - 1)}년생 입니다.`);
             } else {
-                return console.log('이세상 사람이 아닙니다..');
+                console.log('이세상 사람이 아닙니다..');
             }
         }
         (solution(0));
