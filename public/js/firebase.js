@@ -8,7 +8,7 @@
 };
 
   // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 
 let db = firebase.firestore();
