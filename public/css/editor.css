@@ -1,4 +1,4 @@
-.banner {
+.banner{
     width: 100%;
     height: 400px;
     position: relative;
@@ -7,7 +7,7 @@
     background-position: center;
 }
 
-.banner-upload-btn {
+.banner-upload-btn{
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -20,11 +20,12 @@
     align-items: center;
     cursor: pointer;
 }
-.banner-upload-btn img {
+
+.banner-upload-btn img{
     width: 20px;
 }
 
-.blog {
+.blog{
     width: 70vw;
     min-width: 400px;
     height: 100px;
@@ -33,21 +34,21 @@
     padding: 50px 0;
 }
 
-textarea::-webkit-scrollbar {
+textarea::-webkit-scrollbar{
     width: 10px;
 }
 
-textarea::-webkit-scrollbar-thumb {
+textarea::-webkit-scrollbar-thumb{
     background: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 .title,
-.article {
+.article{
     width: 100%;
     min-height: 100px;
     height: auto;
-    outline: navajowhite;
+    outline: none;
     font-size: 50px;
     font-weight: 600;
     color: #2d2d2d;
@@ -58,11 +59,11 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .title::placeholder,
-.article::placeholder {
+.article::placeholder{
     color: #2d2d2d;
 }
 
-.article {
+.article{
     height: 500px;
     font-size: 20px;
     margin-top: 20px;
@@ -72,7 +73,7 @@ textarea::-webkit-scrollbar-thumb {
     white-space: pre-wrap;
 }
 
-.blog-options {
+.blog-options{
     position: fixed;
     bottom: 0;
     left: 0;
@@ -85,13 +86,13 @@ textarea::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-.btn {
+.btn{
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-.btn.grey {
+.btn.grey{
     background: #a5a5a5;
     color: #fff;
     margin-left: 20px;
