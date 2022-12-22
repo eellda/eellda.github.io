@@ -3,39 +3,57 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/APT.css">
+  <link rel="stylesheet" type="text/css" href="./css/APT.css">
+  <h1>주간 아파트 매매 동향 조회 서비스</h1>
 </head>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.js"></script>
-
 <body>
 <div class="container">
 
+<img src="https://www.seoulsolution.kr/sites/all/themes/seoulsolution/images/static/seoul_district_map_ko_0.png" usemap="#image-map" style="max-height:500px;">
 
+<map name="image-map" clss>
+  <area id="area1" target="_blank" alt="서남권" title="서남권" href="https://new.land.naver.com/complexes?ms=37.4670228,126.9700117,13&a=APT:ABYG:JGC&e=RETAIL" coords="36,195,62,355,170,405,257,377,244,307,57,165" shape="poly">
+  <area id="area2" target="_blank" alt="서북권" title="서북권" href="https://new.land.naver.com/complexes?ms=37.563517,126.9084,15&a=APT:ABYG:JGC&e=RETAIL" coords="176,86,116,192,198,260,215,202,218,85" shape="poly">
+  <area id="area3" target="_blank" alt="도심권" title="도심권" href="https://new.land.naver.com/complexes?ms=37.538825,126.96535,15&a=APT:ABYG:JGC&e=RETAIL" coords="222,135,214,263,246,291,280,264,286,205" shape="poly">
+  <area id="area4" target="_blank" alt="동남권" title="동남권" href="https://new.land.naver.com/complexes?ms=37.517408,127.047313,15&a=APT:ABYG:JGC&e=RETAIL" coords="253,307,278,408,384,377,466,245,432,219,357,283" shape="poly">
+  <area id="area5" target="_blank" alt="동북권" title="동북권" href="https://new.land.naver.com/complexes?ms=37.538617,127.082375,15&a=APT:ABYG:JGC&e=RETAIL" coords="296,255,371,261,390,223,359,27,281,21,234,118,295,196" shape="poly">
+</map> 
 
-  <!-- Image Map -->
-<img src="img/seoul_district_map_ko_0.png" usemap="#image-map">
-<map name="image-map">
-    <area id="area1" target="_blank" alt="서남권" title="서남권" href="seonam" coords="47,149,43,184,36,195,34,204,24,211,21,223,14,227,16,242,31,253,47,258,68,255,74,268,71,287,73,306,70,322,60,326,64,349,59,361,80,361,114,351,121,330,122,347,131,359,130,375,137,380,142,393,153,411,171,413,179,399,203,412,217,409,241,397,256,377,245,345,245,322,246,309,212,285,186,264,137,239,95,197,69,170,48,154,111,209,47,149" shape="poly">
-    <area id="area2" target="_blank" alt="서북권" title="서북권" href="seobuk" coords="205,270,226,244,226,224,229,212,223,173,218,141,222,125,231,111,233,96,218,77,202,70,190,87,174,92,168,100,167,123,162,141,160,158,155,172,144,175,130,174,123,183,111,192,107,197,124,216,146,239" shape="poly">
-    <area id="area3" target="_blank" alt="동남권" title="동남권" href="dongnam" coords="242,305,247,318,247,345,253,371,261,378,270,388,280,382,288,377,293,381,302,393,310,416,337,424,347,410,361,402,370,385,385,382,400,373,412,365,424,355,425,347,438,336,443,322,435,316,418,306,427,286,437,274,440,260,472,252,467,232,471,218,458,205,448,206,418,216,408,224,397,229,382,268,352,283,325,277,306,269,289,268,270,287" shape="poly">
-    <area id="area4" target="_blank" alt="동북권" title="동북권" href="dongbuk" coords="291,264,309,265,327,268,332,275,353,277,371,272,382,255,389,235,379,219,384,204,384,197,399,174,396,159,401,148,395,136,387,130,389,123,396,119,392,98,378,86,378,72,384,60,378,45,381,32,365,22,346,16,332,28,321,29,307,22,311,18,288,17,280,33,271,43,263,47,253,74,248,98,245,114,253,126,257,161,252,170,269,175,281,200,296,197,295,217,284,241,281,256,286,259" shape="poly">
-    <area id="area5" target="_blank" alt="도심권" title="도심권" href="dosim" coords="228,117,242,117,248,118,255,143,255,161,250,169,255,174,269,177,273,187,280,202,290,199,296,203,293,220,288,234,281,246,278,255,288,262,283,270,256,294,232,298,213,280,207,272,228,245,229,221,232,210,220,139" shape="poly">
-</map>
+<form action="real_state" method="get">
+  조사 일자 : 
+  <select name="bloodtype">
+    <option value="">주간 아파트 동향 조회 할 기간을 선택하시오.</option>
+    <option value="12_month_1st">12월 첫째주</option>
+    <option value="12_month_2nd">12월 둘째주</option>
+    <option value="12_month_3rd">12월 셋째주</option>
+    <option value="12_month_4th">12월 넷째주</option>
+    <option>------------------------------------</option>
+    <option value="11_month_1st">11월 첫째주</option>
+    <option value="11_month_2nd">11월 둘째주</option>
+    <option value="11_month_3rd">11월 셋째주</option>
+    <option value="11_month_4th">11월 넷째주</option>
+    <option>------------------------------------</option>
+    <option value="10_month_1st">10월 첫째주</option>
+    <option value="10_month_2nd">10월 둘째주</option>
+    <option value="10_month_3rd">10월 셋째주</option>
+    <option value="10_month_4th">10월 넷째주</option>
+  </select>
+  <button>요청</button>
+</form>
+
 </div>
-<button id="btn1">요청</button><br>
 
 
-<script src="js/calendar.js"></script>
 
 <script src="js/APT.js"></script>
 <script src="js/server.js"></script>
 <script src="js/jquery.rwdImageMaps.js"></script>
 <script src="js/jquery.rwdImageMaps.min.js"></script>
-<script>
-  //console.log(window.date);
-</script>
 
 </body>
 </html>

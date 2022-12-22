@@ -1,4 +1,3 @@
-//import { date } from '../front/js/calendar.js';
 
 const express = require('express');
 const request = require('request');
@@ -20,11 +19,13 @@ app.get('/proxy3', (req, res) => {
     'page=1' +
     '&perPage=1000' +
     '&cond%5BREGION_CD%3A%3AEQ%5D=11A01' + 
-    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221201' +
+    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221222' +
     '&cond%5BRESEARCH_DATE%3A%3AGTE%5D=20180101' +
     '&serviceKey=sxu9KRkG12s8M1jzMQue37aHfnGiREb4AkZ3vd3k6AyedQ%2Bwzi69FPFxjjhCFBRG%2Bg2yWdwfHlsp9ICw5TfOZQ%3D%3D';
 
+
     request.get({url: openApiUrl}, (error, response, body) => res.send(body));
+
 });
 
 
@@ -37,7 +38,7 @@ app.get('/proxy4', (req, res) => {
     'page=1' +
     '&perPage=1000' +
     '&cond%5BREGION_CD%3A%3AEQ%5D=11A14' + 
-    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221201' +
+    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=2022122' +
     '&cond%5BRESEARCH_DATE%3A%3AGTE%5D=20180101' +
     '&serviceKey=sxu9KRkG12s8M1jzMQue37aHfnGiREb4AkZ3vd3k6AyedQ%2Bwzi69FPFxjjhCFBRG%2Bg2yWdwfHlsp9ICw5TfOZQ%3D%3D';
 
@@ -53,7 +54,7 @@ app.get('/proxy5', (req, res) => {
     'page=1' +
     '&perPage=1000' +
     '&cond%5BREGION_CD%3A%3AEQ%5D=11A13' + 
-    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221201' +
+    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221222' +
     '&cond%5BRESEARCH_DATE%3A%3AGTE%5D=20180101' +
     '&serviceKey=sxu9KRkG12s8M1jzMQue37aHfnGiREb4AkZ3vd3k6AyedQ%2Bwzi69FPFxjjhCFBRG%2Bg2yWdwfHlsp9ICw5TfOZQ%3D%3D';
 
@@ -69,7 +70,7 @@ app.get('/proxy6', (req, res) => {
     'page=1' +
     '&perPage=1000' +
     '&cond%5BREGION_CD%3A%3AEQ%5D=11A15' + 
-    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221201' +
+    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221222' +
     '&cond%5BRESEARCH_DATE%3A%3AGTE%5D=20180101' +
     '&serviceKey=sxu9KRkG12s8M1jzMQue37aHfnGiREb4AkZ3vd3k6AyedQ%2Bwzi69FPFxjjhCFBRG%2Bg2yWdwfHlsp9ICw5TfOZQ%3D%3D';
 
@@ -85,7 +86,7 @@ app.get('/proxy7', (req, res) => {
     'page=1' +
     '&perPage=1000' +
     '&cond%5BREGION_CD%3A%3AEQ%5D=11A12' + 
-    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221201' +
+    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221222' +
     '&cond%5BRESEARCH_DATE%3A%3AGTE%5D=20180101' +
     '&serviceKey=sxu9KRkG12s8M1jzMQue37aHfnGiREb4AkZ3vd3k6AyedQ%2Bwzi69FPFxjjhCFBRG%2Bg2yWdwfHlsp9ICw5TfOZQ%3D%3D';
 
@@ -101,7 +102,7 @@ app.get('/proxy8', (req, res) => {
     'page=1' +
     '&perPage=1000' +
     '&cond%5BREGION_CD%3A%3AEQ%5D=11A11' + 
-    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221201' +
+    '&cond%5BRESEARCH_DATE%3A%3ALTE%5D=20221222' +
     '&cond%5BRESEARCH_DATE%3A%3AGTE%5D=20180101' +
     '&serviceKey=sxu9KRkG12s8M1jzMQue37aHfnGiREb4AkZ3vd3k6AyedQ%2Bwzi69FPFxjjhCFBRG%2Bg2yWdwfHlsp9ICw5TfOZQ%3D%3D';
 
