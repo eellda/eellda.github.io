@@ -1,20 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/blue.jpg);
+  box-sizing: border-box;
+  /* width: 100%;
+  height: 100%; */
+}
+
 h1 {
     text-align: center;
+    color: rgb(14, 55, 168);
     font-size: 40px;
+    margin: 20px;
   }
-  
-  body {
-    background-color: white
-  }
+ 
+#c {
+  font-size: 54px;
+  color: maroon;
+}
+
+
 
 #area1 {
   font-size: 20px;
   text-align: center;
+  margin: 10px;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+  xdisplay: flex;
+  text-align: center;
+  xflex-direction: column;
+  xjustify-content: center;
+
+}
+
+.select {
+  border: none;
+}
+.btn {
+  display: none;
+}
+
+.form-select {
+  font-size: 40px;
+  text-align: center;
 }
 
 
+
+.select1 {
+  xposition: absolute;
+  xtop: 60vh;
+  xleft: 77vh;
+  display: flex;
+  width: auto;
+  text-align: center;
+}

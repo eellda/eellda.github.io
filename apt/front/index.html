@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="./css/APT.css">
-  <h1>주간 아파트 매매 동향 조회 서비스</h1>
+  <h1>주간 아파트 <span id="c">매매</span> 동향 조회 서비스</h1>
 </head>
 
 
@@ -16,7 +16,7 @@
 
 <img src="https://www.seoulsolution.kr/sites/all/themes/seoulsolution/images/static/seoul_district_map_ko_0.png" usemap="#image-map" style="max-height:500px;">
 
-<map name="image-map" clss>
+<map name="image-map" class="map">
   <area id="area1" target="_blank" alt="서남권" title="서남권" href="https://new.land.naver.com/complexes?ms=37.4670228,126.9700117,13&a=APT:ABYG:JGC&e=RETAIL" coords="36,195,62,355,170,405,257,377,244,307,57,165" shape="poly">
   <area id="area2" target="_blank" alt="서북권" title="서북권" href="https://new.land.naver.com/complexes?ms=37.563517,126.9084,15&a=APT:ABYG:JGC&e=RETAIL" coords="176,86,116,192,198,260,215,202,218,85" shape="poly">
   <area id="area3" target="_blank" alt="도심권" title="도심권" href="https://new.land.naver.com/complexes?ms=37.538825,126.96535,15&a=APT:ABYG:JGC&e=RETAIL" coords="222,135,214,263,246,291,280,264,286,205" shape="poly">
@@ -24,10 +24,25 @@
   <area id="area5" target="_blank" alt="동북권" title="동북권" href="https://new.land.naver.com/complexes?ms=37.538617,127.082375,15&a=APT:ABYG:JGC&e=RETAIL" coords="296,255,371,261,390,223,359,27,281,21,234,118,295,196" shape="poly">
 </map> 
 
+<!-- <select class="form-select" aria-label="Disabled select example" disabled>
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select> -->
+
+<!-- <select class="form-select" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select> -->
+
+
 <form action="real_state" method="get">
-  조사 일자 : 
-  <select name="bloodtype">
-    <option value="">주간 아파트 동향 조회 할 기간을 선택하시오.</option>
+  확인 날짜 선택은? 
+  <select name="bloodtype" class="select" disabled="disabled">
+    <option value="">추후 업데이트 예정.</option>
     <option value="12_month_1st">12월 첫째주</option>
     <option value="12_month_2nd">12월 둘째주</option>
     <option value="12_month_3rd">12월 셋째주</option>
@@ -43,7 +58,7 @@
     <option value="10_month_3rd">10월 셋째주</option>
     <option value="10_month_4th">10월 넷째주</option>
   </select>
-  <button>요청</button>
+  <button class="btn">요청</button>
 </form>
 
 </div>
@@ -51,7 +66,6 @@
 
 
 <script src="js/APT.js"></script>
-<script src="js/server.js"></script>
 <script src="js/jquery.rwdImageMaps.js"></script>
 <script src="js/jquery.rwdImageMaps.min.js"></script>
 
