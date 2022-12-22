@@ -1,14 +1,14 @@
- let firebaseConfig = {
-  apiKey: "AIzaSyDTJ2n_WAXZ-ritIY7AiTaZ8RjfBmne0dw",
-  authDomain: "bolgging-website.firebaseapp.com",
-  projectId: "bolgging-website",
-  storageBucket: "bolgging-website.appspot.com",
-  messagingSenderId: "748753746971",
-  appId: "1:748753746971:web:2a8f6b45e7436ac3bb0cbe"
+// import firebase from 'firebase/app';
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAkvUJqRK9E1BLuj2OwADiRE8fZXjrttK8",
+    authDomain: "bolgging-website-346af.firebaseapp.com",
+    projectId: "bolgging-website-346af",
+    storageBucket: "bolgging-website-346af.appspot.com",
+    messagingSenderId: "72953590512",
+    appId: "1:72953590512:web:18003fe443f35a62ef0835",
+    measurementId: "G-7NLT8WGYFW"
 };
 
-  // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-
-let db = firebase.firestore();
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
